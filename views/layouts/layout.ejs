@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Mitr|Prompt" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="nav-wrapper">
+        <div class="logo-wrapper">
+          logo
+        </div>
+        <div class="links-wrapper">
+          <a class="fas fa-home" href="#"><font>Home</font></a>
+          <a class="fas fa-circle" href="#"><font>Pricing</font></a>
+          <a class="fas fa-circle" href="#"><font>Showcase</font></a>
+          <a class="fas fa-circle" href="#"><font>Contact us</font></a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <%- body %>
+      </div>
+
+
+      <footer id="page-footer" class="navbar navbar-light justify-content-between flex-row-reverse">
+        <div class="nav">
+          <small class="nav-item"><a class="nav-link text-info" href="/contact">Contact<span class="d-none d-sm-inline"> us</span></a></small>
+          <small class="nav-item"><a class="nav-link text-info" href="/legal/terms">Terms<span class="d-none d-sm-inline"> of use</span></a></small>
+          <small class="nav-item"><a class="nav-link text-info" href="/legal/privacy">Privacy<span class="d-none d-sm-inline"> policy</span></a></small>
+        </div>
+        <small class="copy">Copyright &copy; 2019 <a target="_blank">Dolphin</a>. <br class="xs-only"/>All rights reserved.</small>
+      </footer>
+    </div>
+
+    <script>delete window.self;</script>
+
+  </body>
+</html>

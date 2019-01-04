@@ -1,0 +1,46 @@
+{
+  "name": "template",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "axios": "^0.18.0",
+    "foundation-sites": "^6.5.1",
+    "grunt": "1.0.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "sails": "^1.1.0",
+    "sails-hook-grunt": "^3.1.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3",
+    "sass": "^1.15.2"
+  },
+  "scripts": {
+    "dev": "parcel ./src/js/app.js --out-dir ./assets/js",
+    "sass": "sass --watch ./src/sass:assets/css",
+    "forever-start": "forever start app.js",
+    "forever-stop": "forever stop app.js",
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tanatwat/template.git"
+  },
+  "author": "tanatwat",
+  "license": "",
+  "engines": {
+    "node": "^8.10"
+  }
+}
